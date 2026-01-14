@@ -78,7 +78,7 @@ function App() {
             <img src={h.img} alt={h.label} style={imgStyle} />
             <div style={infoStyle}>
               <div style={labelStyle}>{h.label}</div>
-              <div>{h.price}₲ c/u</div>
+              <div>{h.price}$ c/u</div>
             </div>
             <div style={counterStyle}>
               <button className="btn" onClick={() => addItem(h.type)}>➕</button>
@@ -120,10 +120,10 @@ function App() {
           {carrito.map(item => (
             <div key={item.type} style={cartItemStyle}>
               <span>{item.label}</span>
-              <span>{order[item.type]} x {item.price}₲ = {order[item.type]*item.price}₲</span>
+              <span>{order[item.type]} x {item.price}$ = {order[item.type]*item.price}$</span>
             </div>
           ))}
-          <div style={totalCartStyle}>Total: {total}₲</div>
+          <div style={totalCartStyle}>Total: {total}$</div>
         </div>
       )}
 
