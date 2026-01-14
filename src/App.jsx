@@ -15,11 +15,12 @@ function App() {
   const [total, setTotal] = useState(0);
 
   const price = 5000;
+  const quesoprice = 6000;
   const promoPrice = 20000;
 
   const hamburguesas = [
     { type: "classic", label: "Classic", img: "https://bk-latam-prod.s3.amazonaws.com/sites/burgerking.com.py/files/hamburguesa.png", price },
-    { type: "cheese", label: "Especial", img: "https://w7.pngwing.com/pngs/772/330/png-transparent-hamburger-buffalo-wing-cheeseburger-french-fries-hot-dog-buffalo-wings-food-cheese-cheeseburger.png", price },
+    { type: "cheese", label: "Especial", img: "https://w7.pngwing.com/pngs/772/330/png-transparent-hamburger-buffalo-wing-cheeseburger-french-fries-hot-dog-buffalo-wings-food-cheese-cheeseburger.png", quesoprice },
     ];
 
   const promos = [
